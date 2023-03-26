@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cart Item List</title>
+        <meta name="description" content="">
+        <meta name="keyword" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" type="image/png" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700,900" rel="stylesheet"> 
+        <link rel="stylesheet" href="../assets/css/main.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link href="../assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="../assets/css/webslidemenu.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../assets/css/demo.css" />
+        <!--[if IE]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="mainMenu">
+                <div class="wsmenucontainer clearfix">
+                    <div id="overlapblackbg"></div>
+                    <div class="wsmobileheader clearfix"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a> <a class="smallogo"><img src="../assets/images/logo.png" width="127" alt="" /></a> <a class="callusicon" href="tel:+91 9169098888"><i class="fas fa-phone-volume" style="transform: rotate(-45deg);"></i></a> </div>
+                    <div class="container"> 
+                      <!--<div class="logo clearfix"><a href="index.html" title=""><img src="images/logo.png" height="80" alt="" /></a></div>--> 
+                        <!--1st Menu HTML Code-->
+                        <div class="wsmenu clearfix">
+                            <ul class="mobile-sub wsmenu-list">
+                                <li class="Mlogo"><a href="../index.html" style="border:none;"><img src="../assets/images/logo.png" alt=""></a></li>
+                                <li><a href="../index.html" class="active">Home</a></li>
+                                <!--<li><a href="#">Our Services <span class="arrow"></span></a>
+                                  <ul class="wsmenu-submenu">
+                                    <li><a href="#">Website Designing <i class="fa fa-angle-right"></i> </a>
+                                      <ul class="wsmenu-submenu-sub">
+                                        <li><a href="#">Dynamic Website Design</a></li>
+                                        <li><a href="#">Affordable Website Design</a></li>
+                                        <li><a href="#">Responsive Website Design</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="#">Software Development</a></li>
+                                  </ul>
+                                </li>-->
+                                <li><a href="../Page/aboutUs.html">About Us</a></li>
+                                <!-- <li><a href="#">Party Theme</a></li>-->
+                                <li><a href="../Menu/viewMenuList.html">Our menu</a></li>
+                                <!--<li><a href="http://foodhut.info/Franchise/viewFranchiseList">Franchise </a></li>-->
+                                <!--<li><a href="http://foodhut.info/Gallery">Gallery</a></li>-->
+                                <li><a href="../Franchise/franchiseEnquiry.html">Franchise Enquiry</a></li>
+                                <li><a href="../Page/contactUs.html">Contact Us</a></li>
+                                <li>
+                                    <a href="viewCart.html#">My Account <span class="arrow"></span></a>
+                                    <ul class="wsmenu-submenu">
+                                                                                    <li><a href="../User/login.html">Login</a></li>
+                                            <li><a href="../User/signUp.html">Create an account</a></li>
+                                                                            </ul>
+                                </li>
+                                <li><a href="viewCart.html" style="border:none;">(<span id="cartCount"> 0 </span>) Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="pagecont" style="padding-bottom: 15px;">
+    <div class="container">
+        <h1>My Cart (0)</h1>
+        <div class="cartBx">
+            <p class="alert alert-warning" style="display:none">Your shopping cart is empty.</p>
+                        <div id="msgDisplay"></div>
+            <table id="cart_summary">
+                <thead>
+                    <tr style="background:#555; color:#fff;font-size: 12px;font-family: Roboto,Arial,sans-serif;">
+                        <th  scope="col" class="cart_delete last_item">Delete</th>
+                        <th  scope="col" class="cart_product first_item">Product</th>
+                        <th  scope="col" class="cart_description item">Description</th>
+                        <th  scope="col" class="cart_unit item">Unit price</th>
+                        <th  scope="col" class="cart_quantity item text-center">Qty</th>
+                        <th  scope="col" class="cart_total item">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <td class="text-danger text-center" colspan="6">No Item Added in Cart.</td>
+                        </tr>
+                                    </tbody>
+            </table>
+            <table>
+                            </table>
+            <div class="cartBott" style="font-family: Roboto,Arial,sans-serif;">
+                <div class="row">
+                    <div class="col-sm-6"><a href="../index.html" class="btn border-info">Continue Shopping <i class="fas fa-shopping-cart"></i></a></div>
+                    <div class="col-sm-6 text-right">
+                                            </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="cartItemDeleteModal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <form method="post" action="http://foodhut.info/Cart/deleteCartItem">
+                <div class="modal-body">
+                    Are you sure want to delete this item from cart?
+                    <input type="hidden" name="deleteOrderItemId" id="deleteOrderItemId" value=""/>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-xs">Yes</button>
+                    <button type="button" class="btn btn-danger btn-xs" data-dismiss="modal">No</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>        <!-- /#wrapper -->
+        <div class="clearfix"></div>
+        <div class="footerB">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-sm-4">
+                        <h3>Newsletter Signup</h3>
+                        <p>Sing up to receive special offers and the latest style news.</p>
+                        <form>
+                            <div class="form-group"> 
+                                <span id="subscrive_response_div"></span>
+                                <input type="email" class="form-control" name="subscribeEmail" placeholder="Email Address" id="subscribeEmail">
+                            </div>
+                            <button type="button" class="btn btn-danger" name="Subscribe" id="Subscribe"><i class="far fa-paper-plane"></i> Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Join us</h3>
+                        <ul>
+                            <li><a href="viewCart.html#">About us</a></li>
+                            <li><a href="viewCart.html#">Contact us</a></li>
+                            <li><a href="viewCart.html#">Store Locations</a></li>
+                            <li><a href="viewCart.html#">Site Map</a></li>
+                            <li><a href="viewCart.html#">Customer Feedback</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="tel:+91 9169098888"><i class="fas fa-mobile-alt"></i> +91 9169098888</a></li>
+                            <li><a href="mailto:info@foodhut.info" target="_top"><i class="fas fa-envelope-open-text"></i> info@foodhut.info</a></li>
+                            <li>
+                                <i class="fas fa-map-signs"></i> 
+                                Susuwahi, BHU Road, Near Choti Haidrabad Gate, Varanasi - 221011 
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footertop">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-sm-6"> Copyright 2019. All right reserved </div>
+                    <div class="col-sm-6 footr">Design by <a href="http://agilesoft.co.in/" target="_blank">Agile Soft</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- /#wrapper --> 
+        <script src="../assets/js/all.min.js"></script> 
+
+        <script type="text/javascript" src="../assets/js/webslidemenu.js"></script> 
+        <script type="text/javascript">jssor_1_slider_init();</script> 
+
+        <script>
+            $('.pdrBx1').responsiveEqualHeightGrid();
+        </script> 
+        <script>
+            $(document).ready(function () {
+                var owl = $('.carousel5');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: false,
+                    dots: false,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
+                    }
+                })
+            })
+            $(document).ready(function () {
+                var owl = $('.carousel4');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: false,
+                    dots: false,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
+            })
+        </script> 
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script type="text/javascript" src="../assets/overley/js/jquery.loading.block.js"></script>
+        <script type="text/javascript" src="../assets/js/alertify/bootstrap-notify.js"></script>
+        <script type="text/javascript" src="../assets/js/bootstrap-number-input.js"></script>
+        <script>
+        $('.colorful').bootstrapNumber({
+            upClass: 'warning',
+            downClass: 'warning'
+        });
+        </script>
+        <script type="text/javascript" src="../assets/js/ajax.js"></script>
+        <script>countCartItem();</script>
+
+    </body>
+</html>

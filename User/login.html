@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>User Login</title>
+        <meta name="description" content="">
+        <meta name="keyword" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" type="image/png" href="../assets/images/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700,900" rel="stylesheet"> 
+        <link rel="stylesheet" href="../assets/css/main.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link href="../assets/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="../assets/css/webslidemenu.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../assets/css/demo.css" />
+        <!--[if IE]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <div class="mainMenu">
+                <div class="wsmenucontainer clearfix">
+                    <div id="overlapblackbg"></div>
+                    <div class="wsmobileheader clearfix"> <a id="wsnavtoggle" class="animated-arrow"><span></span></a> <a class="smallogo"><img src="../assets/images/logo.png" width="127" alt="" /></a> <a class="callusicon" href="tel:+91 9169098888"><i class="fas fa-phone-volume" style="transform: rotate(-45deg);"></i></a> </div>
+                    <div class="container"> 
+                      <!--<div class="logo clearfix"><a href="index.html" title=""><img src="images/logo.png" height="80" alt="" /></a></div>--> 
+                        <!--1st Menu HTML Code-->
+                        <div class="wsmenu clearfix">
+                            <ul class="mobile-sub wsmenu-list">
+                                <li class="Mlogo"><a href="../index.html" style="border:none;"><img src="../assets/images/logo.png" alt=""></a></li>
+                                <li><a href="../index.html" class="active">Home</a></li>
+                                <!--<li><a href="#">Our Services <span class="arrow"></span></a>
+                                  <ul class="wsmenu-submenu">
+                                    <li><a href="#">Website Designing <i class="fa fa-angle-right"></i> </a>
+                                      <ul class="wsmenu-submenu-sub">
+                                        <li><a href="#">Dynamic Website Design</a></li>
+                                        <li><a href="#">Affordable Website Design</a></li>
+                                        <li><a href="#">Responsive Website Design</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a href="#">Software Development</a></li>
+                                  </ul>
+                                </li>-->
+                                <li><a href="../Page/aboutUs.html">About Us</a></li>
+                                <!-- <li><a href="#">Party Theme</a></li>-->
+                                <li><a href="../Menu/viewMenuList.html">Our menu</a></li>
+                                <!--<li><a href="http://foodhut.info/Franchise/viewFranchiseList">Franchise </a></li>-->
+                                <!--<li><a href="http://foodhut.info/Gallery">Gallery</a></li>-->
+                                <li><a href="../Franchise/franchiseEnquiry.html">Franchise Enquiry</a></li>
+                                <li><a href="../Page/contactUs.html">Contact Us</a></li>
+                                <li>
+                                    <a href="login.html#">My Account <span class="arrow"></span></a>
+                                    <ul class="wsmenu-submenu">
+                                                                                    <li><a href="login.html">Login</a></li>
+                                            <li><a href="signUp.html">Create an account</a></li>
+                                                                            </ul>
+                                </li>
+                                <li><a href="../Cart/viewCart.html" style="border:none;">(<span id="cartCount"> 0 </span>) Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="pageBx">
+    <div class="pageHead" style="background:url(../assets/images/textm.jpg) no-repeat;">
+        <div>
+            <div class="container">
+                <h1>Login</h1>
+                <ul class="breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>Login</li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <div class="pagecont">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 mx-auto">
+                    <div id="first">
+                        <div class="myform form ">
+                            <h1>Login</h1>
+                            <form action="login.html" method="post" name="login">
+                                <span id="userLoginResponse"></span>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="text" name="username" id="username"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Username" required autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Password</label>
+                                    <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password" required>
+                                </div>
+                                <div class="form-group">
+                                    <p class="text-center">By signing up you accept our <a href="login.html#">Terms Of Use</a></p>
+                                </div>
+                                <div class="col-md-12 text-center ">
+                                    <button type="button" name="login" id="login" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <div class="login-or">
+                                        <hr class="hr-or">
+                                        <span class="span-or">or</span>
+                                    </div>
+                                </div>
+<!--                                <div class="col-md-12 mb-3">
+                                    <p class="text-center">
+                                        <a href="javascript:void();" class="google btn mybtn"><i class="fab fa-google"></i> Signup using Google
+                                        </a>
+                                    </p>
+                                </div>-->
+                                <div class="form-group">
+                                    <p class="text-center">Don't have account? <a href="signUp.html" id="signup">Sign up here</a></p>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div id="second">
+                        <div class="myform form ">
+                            <h2>Signup</h2>
+                            <form action="login.html#" name="registration">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mobile No.</label>
+                                    <input type="text"  name="" class="form-control" id="" aria-describedby="" placeholder="Mobile No.">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Password</label>
+                                    <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                                </div>
+                                <div class="col-md-12 text-center mb-3">
+                                    <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <div class="form-group">
+                                        <p class="text-center"><a href="login.html#" id="signin">Already have an account?</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--<div class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sign In</h5>
+                        <span id="userLoginResponse"></span>
+                        <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="email"  name="username" id="username" value="" class="form-control" placeholder="Email address" required autofocus>
+                                <label for="username">Email address</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" name="password" id="password" value="" class="form-control" placeholder="Password" required>
+                                <label for="password">Password</label>
+                            </div>
+
+                                                        <div class="custom-control custom-checkbox mb-3">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                            <label class="custom-control-label" for="customCheck1">Remember password</label>
+                                                        </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" name="login" id="login">Sign in</button>
+                            <br>
+                            <center><a href="http://foodhut.info/" class=""><i class="fa fa-key mr-2"></i> Forgot Password?</a></center>
+                            <br>
+                            <hr class="my-4">
+                            <a class="btn btn-lg btn-success btn-block text-uppercase" href="http://foodhut.info/User/signUp" style="color:#fff">Sign Up</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->        <!-- /#wrapper -->
+        <div class="clearfix"></div>
+        <div class="footerB">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-sm-4">
+                        <h3>Newsletter Signup</h3>
+                        <p>Sing up to receive special offers and the latest style news.</p>
+                        <form>
+                            <div class="form-group"> 
+                                <span id="subscrive_response_div"></span>
+                                <input type="email" class="form-control" name="subscribeEmail" placeholder="Email Address" id="subscribeEmail">
+                            </div>
+                            <button type="button" class="btn btn-danger" name="Subscribe" id="Subscribe"><i class="far fa-paper-plane"></i> Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Join us</h3>
+                        <ul>
+                            <li><a href="login.html#">About us</a></li>
+                            <li><a href="login.html#">Contact us</a></li>
+                            <li><a href="login.html#">Store Locations</a></li>
+                            <li><a href="login.html#">Site Map</a></li>
+                            <li><a href="login.html#">Customer Feedback</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="tel:+91 9169098888"><i class="fas fa-mobile-alt"></i> +91 9169098888</a></li>
+                            <li><a href="mailto:info@foodhut.info" target="_top"><i class="fas fa-envelope-open-text"></i> info@foodhut.info</a></li>
+                            <li>
+                                <i class="fas fa-map-signs"></i> 
+                                Susuwahi, BHU Road, Near Choti Haidrabad Gate, Varanasi - 221011 
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footertop">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-sm-6"> Copyright 2019. All right reserved </div>
+                    <div class="col-sm-6 footr">Design by <a href="http://agilesoft.co.in/" target="_blank">Agile Soft</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- /#wrapper --> 
+        <script src="../assets/js/all.min.js"></script> 
+
+        <script type="text/javascript" src="../assets/js/webslidemenu.js"></script> 
+        <script type="text/javascript">jssor_1_slider_init();</script> 
+
+        <script>
+            $('.pdrBx1').responsiveEqualHeightGrid();
+        </script> 
+        <script>
+            $(document).ready(function () {
+                var owl = $('.carousel5');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: false,
+                    dots: false,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
+                    }
+                })
+            })
+            $(document).ready(function () {
+                var owl = $('.carousel4');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: false,
+                    dots: false,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 2
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
+            })
+        </script> 
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+        
+        <script type="text/javascript" src="../assets/overley/js/jquery.loading.block.js"></script>
+        <script type="text/javascript" src="../assets/js/alertify/bootstrap-notify.js"></script>
+        <script type="text/javascript" src="../assets/js/bootstrap-number-input.js"></script>
+        <script>
+        $('.colorful').bootstrapNumber({
+            upClass: 'warning',
+            downClass: 'warning'
+        });
+        </script>
+        <script type="text/javascript" src="../assets/js/ajax.js"></script>
+        <script>countCartItem();</script>
+
+    </body>
+</html>
